@@ -1,43 +1,45 @@
 include <iostream>
-#include <string>
-
 using namespace std;
 
 int main() {
-    string studentName;
-    double marks, attendance;
-    string scholarshipStatus;
+    
+    int bookID, dueDate, returnDate;
+    int daysOverdue, fineRate, fineAmount;
+
+
+    cout << "Enter Book ID: ";
+    cin >> bookID;
+    cout << "Enter Due Date (as an integer): ";
+    cin >> dueDate;
+    cout << "Enter Return Date (as an integer): ";
+    cin >> returnDate;
 
     
-    cout << "Enter student name: ";
-    getline(cin, studentName);
-    cout << "Enter exam marks (0-100): ";
-    cin >> marks;
-    cout << "Enter attendance percentage (0-100): ";
-    cin >> attendance;
+    daysOverdue = returnDate - dueDate;
 
-    if (marks >= 70) {
-        if (attendance >= 80) {
-            scholarshipStatus = "Full Scholarship";
-        } else {
-            scholarshipStatus = "Partial Scholarship";
-        }
-    } 
-    else if (marks >= 50) { // Marks between 50 and 69
-        if (attendance >= 85) {
-            scholarshipStatus = "Partial Scholarship";
-        } else {
-            scholarshipStatus = "No Scholarship";
-        }
-    } 
-    else { // Marks below 50
-        scholarshipStatus = "No Scholarship";
+
+    if (daysOverdue <= 0) {
+        fineRate = 0;
+        fineAmount = 0;
+    } else if (daysOverdue <= 7) {
+        fineRate = 20;
+        fineAmount = daysOverdue * fineRate;
+    } else if (daysOverdue <= 14) {
+        fineRate = 50;
+        fineAmount = daysOverdue * fineRate;
+    } else {
+        fineRate = 100;
+        fineAmount = daysOverdue * fineRate;
     }
 
     
-    cout << "\n--- Scholarship Results ---" << endl;
-    cout << "Student Name: " << studentName << endl;
-    cout << "Scholarship Status: " << scholarshipStatus << endl;
+    cout << "\n--- Library Fine Details ---\n";
+    cout << "Book ID: " << bookID << endl;
+    cout << "Due Date: " << dueDate << endl;
+    cout << "Return Date: " << returnDate << endl;
+    cout << "Days Overdue: " << daysOverdue << endl;
+    cout << "Fine Rate (Ksh per day): " << fineRate << endl;
+    cout << "Total Fine Amount (Ksh): " << fineAmount << endl;
 
     return 0;
 }
