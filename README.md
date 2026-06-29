@@ -8,6 +8,7 @@ It covers fundamental programming concepts and problem solving techniques.
 3. functions
 4. classes and objects
 5. constructors and destructors
+6. inheritance
 
 
 #requirements
