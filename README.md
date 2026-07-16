@@ -1,4 +1,5 @@
 :: DESCRIPTION 
+
 This repository contains various c++assignment 
 completed as part of my learning and coursework.
 It covers fundamental programming concepts and problem solving techniques.
@@ -18,14 +19,17 @@ It covers fundamental programming concepts and problem solving techniques.
 
 
 :: REQUIREMENTS 
+
 1. an IDE like vs code
 2. c++ compiler
 
 
 :: OBJECTIVES
+
 strengthen c++ skills
 understand OOP concepts eg encapsulation, polymorphism
 
 
 :: AUTHOR 
+
 Kosgei
