@@ -1,21 +1,31 @@
-#Description
+:: DESCRIPTION 
 This repository contains various c++assignment 
 completed as part of my learning and coursework.
 It covers fundamental programming concepts and problem solving techniques.
-#topics covered
+
+
+::TOPICS COVERED 
 1. c++basics
 2. control structures
 3. functions
-4. classes and objects
-5. constructors and destructors
-6. inheritance
+4. loops
+5. arrays 
+6. classes and objects
+7. constructors and destructors
+8. inheritance
+9. encapsulation
+10. polymorphism 
 
 
-#requirements
-
+:: REQUIREMENTS 
 1. an IDE like vs code
 2. c++ compiler
-#objectives
+
+
+:: OBJECTIVES
 strengthen c++ skills
-#author
+understand OOP concepts eg encapsulation, polymorphism
+
+
+:: AUTHOR 
 Kosgei
